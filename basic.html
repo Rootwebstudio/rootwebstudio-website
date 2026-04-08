@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Plan — Root Web</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'DM Sans', sans-serif; background: #f8f7ff; color: #1a1a2e; }
+    h1, h2, h3, .syne { font-family: 'Syne', sans-serif; }
+    .btn-primary { background: #5b4bff; color: white; padding: 0.85rem 2rem; border-radius: 999px; font-family: 'Syne', sans-serif; font-weight: 600; transition: all 0.2s; display: inline-block; }
+    .btn-primary:hover { background: #4535ee; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(91,75,255,0.3); }
+    .btn-outline { border: 2px solid #5b4bff; color: #5b4bff; padding: 0.8rem 2rem; border-radius: 999px; font-family: 'Syne', sans-serif; font-weight: 600; transition: all 0.2s; display: inline-block; }
+    .btn-outline:hover { background: #5b4bff; color: white; transform: translateY(-2px); }
+    .card { background: white; border-radius: 1.25rem; box-shadow: 0 2px 20px rgba(91,75,255,0.07); transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(91,75,255,0.13); }
+    .tag { background: #ede8ff; color: #5b4bff; border-radius: 999px; padding: 0.25rem 0.9rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-family: 'Syne', sans-serif; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-purple-50">
+  <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+    <a href="index.html" class="syne font-extrabold text-xl text-[#5b4bff]">Root Web Studio</a>
+    <div class="flex gap-4">
+      <a href="index.html" class="text-gray-500 text-sm hover:text-[#5b4bff] transition">← Back to Home</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="py-20 bg-gradient-to-br from-[#ede8ff] via-[#f8f7ff] to-[#d4f5e9]">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <span class="tag mb-4 inline-block">Basic Plan</span>
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Simple. Clean. <span class="text-[#5b4bff]">Done in days.</span></h1>
+    <p class="text-xl text-gray-600 max-w-xl mx-auto mb-8">A professional 1-page website for your business, delivered in 2–3 days. Everything you need to start looking legit online.</p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="https://forms.gle/GSHn36Yp8Li5qnQL7" target="_blank" class="btn-primary text-lg">Get Started — ₹2,000 →</a>
+      <a href="demo-basic.html" class="btn-outline">View Demo Site</a>
+    </div>
+    <p class="text-sm text-gray-400 mt-4">One-time payment · No hidden fees · You own the files</p>
+  </div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="py-20 max-w-6xl mx-auto px-5">
+  <div class="text-center mb-12">
+    <span class="tag mb-3 inline-block">What You Get</span>
+    <h2 class="text-4xl font-extrabold">Everything in the Basic Plan</h2>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="card p-7">
+      <div class="w-14 h-14 rounded-2xl bg-[#ede8ff] flex items-center justify-center mb-5 text-3xl">📱</div>
+      <h3 class="text-lg font-bold syne mb-2">Mobile Responsive</h3>
+      <p class="text-gray-500 text-sm">Your site looks perfect on every phone, tablet, and desktop screen. We build mobile-first, always.</p>
+    </div>
+    <div class="card p-7">
+      <div class="w-14 h-14 rounded-2xl bg-[#d4f5e9] flex items-center justify-center mb-5 text-3xl">⚡</div>
+      <h3 class="text-lg font-bold syne mb-2">Fast Delivery</h3>
+      <p class="text-gray-500 text-sm">Your complete website delivered in just 2–3 days. We work fast without compromising on quality.</p>
+    </div>
+    <div class="card p-7">
+      <div class="w-14 h-14 rounded-2xl bg-[#ffe8e0] flex items-center justify-center mb-5 text-3xl">🎨</div>
+      <h3 class="text-lg font-bold syne mb-2">Custom Design</h3>
+      <p class="text-gray-500 text-sm">Not a template. We design your site from scratch, matching your brand and business vibe.</p>
+    </div>
+    <div class="card p-7">
+      <div class="w-14 h-14 rounded-2xl bg-[#e8f4ff] flex items-center justify-center mb-5 text-3xl">📞</div>
+      <h3 class="text-lg font-bold syne mb-2">WhatsApp Button</h3>
+      <p class="text-gray-500 text-sm">A click-to-chat WhatsApp button so visitors can contact you instantly without filling forms.</p>
+    </div>
+    <div class="card p-7">
+      <div class="w-14 h-14 rounded-2xl bg-[#fff8e0] flex items-center justify-center mb-5 text-3xl">🌐</div>
+      <h3 class="text-lg font-bold syne mb-2">Free Hosting Help</h3>
+      <p class="text-gray-500 text-sm">We guide you to deploy for free on Netlify or GitHub Pages. No monthly hosting cost needed.</p>
+    </div>
+    <div class="card p-7">
+      <div class="w-14 h-14 rounded-2xl bg-[#f0ffe8] flex items-center justify-center mb-5 text-3xl">🔒</div>
+      <h3 class="text-lg font-bold syne mb-2">You Own Everything</h3>
+      <p class="text-gray-500 text-sm">We hand over all the code files. No dependency on us. Your site, your files, forever.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S ON THE PAGE -->
+<section class="py-16 bg-white">
+  <div class="max-w-4xl mx-auto px-5">
+    <div class="text-center mb-12">
+      <span class="tag mb-3 inline-block">Page Structure</span>
+      <h2 class="text-4xl font-extrabold">Sections in your Basic site</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="flex items-center gap-4 p-5 rounded-2xl bg-[#f8f7ff] border border-purple-100">
+        <div class="w-10 h-10 rounded-xl bg-[#5b4bff] text-white flex items-center justify-center font-bold syne">1</div>
+        <div>
+          <p class="font-bold">Hero Section</p>
+          <p class="text-gray-500 text-sm">Your business name, tagline, and main call to action</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-5 rounded-2xl bg-[#f8f7ff] border border-purple-100">
+        <div class="w-10 h-10 rounded-xl bg-[#5b4bff] text-white flex items-center justify-center font-bold syne">2</div>
+        <div>
+          <p class="font-bold">About Section</p>
+          <p class="text-gray-500 text-sm">Who you are, what you do, why customers choose you</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-5 rounded-2xl bg-[#f8f7ff] border border-purple-100">
+        <div class="w-10 h-10 rounded-xl bg-[#5b4bff] text-white flex items-center justify-center font-bold syne">3</div>
+        <div>
+          <p class="font-bold">Services Section</p>
+          <p class="text-gray-500 text-sm">3–4 cards showcasing what you offer</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 p-5 rounded-2xl bg-[#f8f7ff] border border-purple-100">
+        <div class="w-10 h-10 rounded-xl bg-[#5b4bff] text-white flex items-center justify-center font-bold syne">4</div>
+        <div>
+          <p class="font-bold">Contact Section</p>
+          <p class="text-gray-500 text-sm">WhatsApp button + your address/phone number</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMO PREVIEW -->
+<section class="py-20 max-w-6xl mx-auto px-5">
+  <div class="card p-10 bg-gradient-to-br from-[#ede8ff] to-[#d4f5e9] text-center">
+    <span class="tag mb-4 inline-block">Live Demo</span>
+    <h2 class="text-4xl font-extrabold mb-4">See the Basic plan in action</h2>
+    <p class="text-gray-600 max-w-md mx-auto mb-8">Click below to see a real example of what your Basic plan website will look like. Clean, simple, and professional.</p>
+    <a href="demo-basic.html" class="btn-primary text-lg">View Demo Website →</a>
+  </div>
+</section>
+
+<!-- PRICING CALL OUT -->
+<section class="py-12 bg-[#1a1a2e] text-white">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <h2 class="text-4xl font-extrabold syne mb-3">₹2,000 · One-time · Yours forever</h2>
+    <p class="text-gray-400 mb-8">No subscriptions. No renewal fees. Pay once, own your website.</p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="https://forms.gle/GSHn36Yp8Li5qnQL7" target="_blank" class="btn-primary text-lg">Get Started Now →</a>
+      <a href="standard.html" class="btn-outline" style="border-color: rgba(255,255,255,0.3); color: white;">See Standard Plan</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#1a1a2e] border-t border-white/10 text-white py-8">
+  <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-gray-500">
+    <a href="index.html" class="syne font-extrabold text-[#a896ff] text-lg">Root Web Studio</a>
+    <p>© 2025 Root Web Studio · rootweb.website.designers@gmail.com</p>
+    <a href="index.html" class="hover:text-white transition">← Back to Home</a>
+  </div>
+</footer>
+
+</body>
+</html>

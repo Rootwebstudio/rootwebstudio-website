@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verdant Interiors — Transform Your Space</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --green: #2d7a4f; --light-green: #e8f5ee; --accent: #f5a623; }
+    body { font-family: 'DM Sans', sans-serif; background: #ffffff; color: #1a2e25; }
+    h1, h2, h3, .syne { font-family: 'Syne', sans-serif; }
+    .btn-primary { background: #2d7a4f; color: white; padding: 0.85rem 2rem; border-radius: 999px; font-family: 'Syne', sans-serif; font-weight: 700; transition: all 0.2s; display: inline-block; }
+    .btn-primary:hover { background: #235f3d; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(45,122,79,0.3); }
+    .btn-outline { border: 2px solid #2d7a4f; color: #2d7a4f; padding: 0.8rem 2rem; border-radius: 999px; font-family: 'Syne', sans-serif; font-weight: 600; display: inline-block; transition: all 0.2s; }
+    .btn-outline:hover { background: #2d7a4f; color: white; }
+    .card { background: white; border-radius: 1.25rem; box-shadow: 0 2px 20px rgba(45,122,79,0.07); transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(45,122,79,0.13); }
+    .demo-banner { background: #2d7a4f; color: white; text-align: center; padding: 0.6rem 1rem; font-size: 0.8rem; font-weight: 600; }
+    .tag { background: #e8f5ee; color: #2d7a4f; border-radius: 999px; padding: 0.25rem 0.9rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-family: 'Syne', sans-serif; }
+  </style>
+</head>
+<body>
+
+<!-- DEMO BANNER -->
+<div class="demo-banner">
+  🌿 This is a Root Web Studio demo — Standard Plan example &nbsp;·&nbsp; <a href="standard.html" class="underline">Get yours for ₹5,000 →</a>
+</div>
+
+<!-- NAV -->
+<header class="sticky top-0 z-40 bg-white border-b border-green-50 shadow-sm">
+  <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="text-2xl">🌿</span>
+      <div>
+        <p class="font-extrabold syne text-lg leading-none text-[#2d7a4f]">Verdant Interiors</p>
+        <p class="text-xs text-gray-400">Design Studio</p>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-7 text-sm text-gray-600">
+      <a href="#about" class="hover:text-[#2d7a4f] transition">About</a>
+      <a href="#services" class="hover:text-[#2d7a4f] transition">Services</a>
+      <a href="#testimonials" class="hover:text-[#2d7a4f] transition">Reviews</a>
+      <a href="#pricing" class="hover:text-[#2d7a4f] transition">Pricing</a>
+      <a href="#contact" class="hover:text-[#2d7a4f] transition">Contact</a>
+    </nav>
+    <a href="#contact" class="btn-primary text-sm py-2 px-5">Book a Consult</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="min-h-[88vh] flex items-center bg-gradient-to-br from-[#e8f5ee] via-white to-[#fef9ee]">
+  <div class="max-w-6xl mx-auto px-5 py-16 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="tag mb-5 inline-block">Interior Design Studio · Bangalore</span>
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-5">
+        Spaces that tell<br/><span class="text-[#2d7a4f]">your story.</span>
+      </h1>
+      <p class="text-lg text-gray-600 mb-8 max-w-md">We design interiors that are functional, beautiful, and uniquely yours. From living rooms to entire homes — we transform spaces.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#contact" class="btn-primary text-lg">Book Free Consultation</a>
+        <a href="#services" class="btn-outline">Explore Services</a>
+      </div>
+      <div class="flex gap-8 mt-10">
+        <div>
+          <p class="text-2xl font-extrabold syne text-[#2d7a4f]">200+</p>
+          <p class="text-sm text-gray-500">Projects Done</p>
+        </div>
+        <div>
+          <p class="text-2xl font-extrabold syne text-[#2d7a4f]">8 Yrs</p>
+          <p class="text-sm text-gray-500">Experience</p>
+        </div>
+        <div>
+          <p class="text-2xl font-extrabold syne text-[#2d7a4f]">4.9★</p>
+          <p class="text-sm text-gray-500">Google Rating</p>
+        </div>
+      </div>
+    </div>
+    <div class="hidden md:grid grid-cols-2 gap-4">
+      <div class="space-y-4">
+        <div class="h-52 rounded-2xl bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center text-6xl">🛋️</div>
+        <div class="h-32 rounded-2xl bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center text-5xl">🪴</div>
+      </div>
+      <div class="space-y-4 mt-8">
+        <div class="h-32 rounded-2xl bg-gradient-to-br from-rose-100 to-rose-200 flex items-center justify-center text-5xl">🏠</div>
+        <div class="h-52 rounded-2xl bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center text-6xl">🪑</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="tag mb-4 inline-block">Our Story</span>
+      <h2 class="text-4xl font-extrabold mb-5">Design with purpose.<br/>Spaces with soul.</h2>
+      <p class="text-gray-600 mb-4">Verdant Interiors was founded in 2016 by Priya Nair, a designer with a passion for bringing warmth and life into built spaces. We believe every home should reflect its owner's personality — not just a trend.</p>
+      <p class="text-gray-600 mb-6">We work closely with every client through a simple, stress-free process. No jargon, no pushy upsells — just thoughtful design.</p>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-[#e8f5ee] rounded-2xl p-4 text-center">
+          <p class="text-2xl font-extrabold syne text-[#2d7a4f]">200+</p>
+          <p class="text-sm text-gray-600">Happy Families</p>
+        </div>
+        <div class="bg-[#fef9ee] rounded-2xl p-4 text-center">
+          <p class="text-2xl font-extrabold syne text-[#f5a623]">8 Years</p>
+          <p class="text-sm text-gray-600">In Business</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gradient-to-br from-[#e8f5ee] to-[#fef9ee] rounded-3xl p-12 text-center">
+      <div class="text-8xl mb-4">👩‍🎨</div>
+      <p class="font-extrabold syne text-xl">Priya Nair</p>
+      <p class="text-gray-500 text-sm">Founder & Lead Designer</p>
+      <p class="text-xs mt-3 text-gray-400">B.Des, NID Ahmedabad · 8+ years in residential design</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center mb-12">
+      <span class="tag mb-3 inline-block">Services</span>
+      <h2 class="text-4xl font-extrabold">What we design</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-7">
+        <span class="text-4xl mb-4 block">🛋️</span>
+        <h3 class="font-bold syne text-xl mb-2">Living Room Design</h3>
+        <p class="text-gray-500 text-sm">Complete living room transformation — layout, furniture, colors, lighting, and accessories that tie the room together.</p>
+      </div>
+      <div class="card p-7">
+        <span class="text-4xl mb-4 block">🛏️</span>
+        <h3 class="font-bold syne text-xl mb-2">Bedroom Interiors</h3>
+        <p class="text-gray-500 text-sm">Peaceful, personal bedroom designs. We handle wardrobes, bed placement, lighting, and that perfect calming palette.</p>
+      </div>
+      <div class="card p-7">
+        <span class="text-4xl mb-4 block">🍳</span>
+        <h3 class="font-bold syne text-xl mb-2">Modular Kitchens</h3>
+        <p class="text-gray-500 text-sm">Smart kitchen design with modular layouts, storage solutions, and material selection for beauty and function.</p>
+      </div>
+      <div class="card p-7">
+        <span class="text-4xl mb-4 block">🏠</span>
+        <h3 class="font-bold syne text-xl mb-2">Full Home Design</h3>
+        <p class="text-gray-500 text-sm">Complete interior design for your entire home, from concept to handover. One team, one vision, perfect execution.</p>
+      </div>
+      <div class="card p-7">
+        <span class="text-4xl mb-4 block">🏢</span>
+        <h3 class="font-bold syne text-xl mb-2">Office Interiors</h3>
+        <p class="text-gray-500 text-sm">Productive, inspiring workspaces for startups and established businesses. Professional environments that reflect your brand.</p>
+      </div>
+      <div class="card p-7">
+        <span class="text-4xl mb-4 block">🖼️</span>
+        <h3 class="font-bold syne text-xl mb-2">3D Visualization</h3>
+        <p class="text-gray-500 text-sm">See your space before a single piece of furniture moves. Photorealistic 3D renders of every room we design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center mb-12">
+      <span class="tag mb-3 inline-block">Reviews</span>
+      <h2 class="text-4xl font-extrabold">What our clients say</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-7 border border-green-100">
+        <div class="flex gap-1 mb-4">
+          <span class="text-yellow-400">★★★★★</span>
+        </div>
+        <p class="text-gray-600 text-sm mb-5">"Priya completely transformed our 2BHK. We gave her a rough idea and she created something beyond our imagination. The 3D renders helped us trust the process."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center font-bold text-green-700">A</div>
+          <div>
+            <p class="font-bold text-sm">Arjun Sharma</p>
+            <p class="text-xs text-gray-400">Koramangala, Bangalore</p>
+          </div>
+        </div>
+      </div>
+      <div class="card p-7 border border-green-100">
+        <div class="flex gap-1 mb-4">
+          <span class="text-yellow-400">★★★★★</span>
+        </div>
+        <p class="text-gray-600 text-sm mb-5">"Our modular kitchen is the best thing about our new apartment. Functional, stunning, and every inch is used smartly. Verdant was a pleasure to work with."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center font-bold text-amber-700">S</div>
+          <div>
+            <p class="font-bold text-sm">Sneha & Rahul M.</p>
+            <p class="text-xs text-gray-400">Whitefield, Bangalore</p>
+          </div>
+        </div>
+      </div>
+      <div class="card p-7 border border-green-100">
+        <div class="flex gap-1 mb-4">
+          <span class="text-yellow-400">★★★★★</span>
+        </div>
+        <p class="text-gray-600 text-sm mb-5">"We hired Verdant for our startup office. They understood our brand and made a workspace our team actually loves. Great communication throughout the project."</p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center font-bold text-purple-700">V</div>
+          <div>
+            <p class="font-bold text-sm">Vikram Nanda</p>
+            <p class="text-xs text-gray-400">Indiranagar, Bangalore</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-20 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-5">
+    <div class="text-center mb-12">
+      <span class="tag mb-3 inline-block">Pricing</span>
+      <h2 class="text-4xl font-extrabold">Simple, transparent packages</h2>
+      <p class="text-gray-500 mt-3">All packages include 3D renders, site visits, and a dedicated designer.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-7">
+        <p class="text-sm font-bold text-gray-400 syne uppercase tracking-wider mb-3">Starter</p>
+        <p class="text-3xl font-extrabold syne mb-1">₹25,000</p>
+        <p class="text-gray-400 text-sm mb-6">per room</p>
+        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+          <li class="flex gap-2"><span class="text-green-500">✓</span> 1 room design</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> 2D floor plan</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> Furniture recommendations</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> 2 revision rounds</li>
+        </ul>
+        <a href="#contact" class="btn-outline w-full text-center block">Get Started</a>
+      </div>
+      <div class="card p-7 border-2 border-[#2d7a4f] relative">
+        <div class="absolute top-4 right-4 bg-[#2d7a4f] text-white text-xs font-bold px-2 py-1 rounded-full">Popular</div>
+        <p class="text-sm font-bold text-[#2d7a4f] syne uppercase tracking-wider mb-3">Complete Home</p>
+        <p class="text-3xl font-extrabold syne mb-1">₹1,20,000</p>
+        <p class="text-gray-400 text-sm mb-6">2BHK onwards</p>
+        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+          <li class="flex gap-2"><span class="text-green-500">✓</span> Full home design</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> 3D photorealistic renders</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> Modular kitchen included</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> Site supervision</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> Unlimited revisions</li>
+        </ul>
+        <a href="#contact" class="btn-primary w-full text-center block">Book Consult</a>
+      </div>
+      <div class="card p-7">
+        <p class="text-sm font-bold text-gray-400 syne uppercase tracking-wider mb-3">Office</p>
+        <p class="text-3xl font-extrabold syne mb-1">₹80,000</p>
+        <p class="text-gray-400 text-sm mb-6">up to 1000 sqft</p>
+        <ul class="space-y-2 text-sm text-gray-600 mb-6">
+          <li class="flex gap-2"><span class="text-green-500">✓</span> Space planning</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> Branded interiors</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> 3D renders</li>
+          <li class="flex gap-2"><span class="text-green-500">✓</span> Execution support</li>
+        </ul>
+        <a href="#contact" class="btn-outline w-full text-center block">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-5">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="tag mb-4 inline-block">Contact</span>
+        <h2 class="text-4xl font-extrabold mb-4">Start with a free<br/>30-min consultation.</h2>
+        <p class="text-gray-600 mb-6">Tell us about your space and what you're dreaming of. We'll listen, advise, and put together a proposal — no pressure.</p>
+        <div class="space-y-4">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#e8f5ee] flex items-center justify-center text-xl">📍</div>
+            <div>
+              <p class="font-bold text-sm">Studio Address</p>
+              <p class="text-gray-500 text-sm">12, Indiranagar 100ft Road, Bangalore – 560038</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#e8f5ee] flex items-center justify-center text-xl">📞</div>
+            <div>
+              <p class="font-bold text-sm">Phone / WhatsApp</p>
+              <p class="text-gray-500 text-sm">+91 98888 77777</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-[#e8f5ee] flex items-center justify-center text-xl">📧</div>
+            <div>
+              <p class="font-bold text-sm">Email</p>
+              <p class="text-gray-500 text-sm">hello@verdantinteriors.in</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card p-8 border border-green-100">
+        <h3 class="font-bold syne text-xl mb-5">Send us a message</h3>
+        <div class="space-y-4">
+          <div>
+            <label class="text-sm font-medium text-gray-700 block mb-1">Your Name</label>
+            <input type="text" placeholder="Priya Mehta" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-[#2d7a4f] transition"/>
+          </div>
+          <div>
+            <label class="text-sm font-medium text-gray-700 block mb-1">Phone / WhatsApp</label>
+            <input type="text" placeholder="+91 98xxx xxxxx" class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-[#2d7a4f] transition"/>
+          </div>
+          <div>
+            <label class="text-sm font-medium text-gray-700 block mb-1">What do you need?</label>
+            <select class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-[#2d7a4f] transition bg-white">
+              <option>Living Room Design</option>
+              <option>Bedroom Design</option>
+              <option>Full Home Design</option>
+              <option>Modular Kitchen</option>
+              <option>Office Interiors</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm font-medium text-gray-700 block mb-1">Message</label>
+            <textarea rows="3" placeholder="Tell us about your space..." class="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm outline-none focus:border-[#2d7a4f] transition resize-none"></textarea>
+          </div>
+          <button class="btn-primary w-full text-center text-base py-4">Send Message →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#1a2e25] text-white py-10">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>
+        <p class="font-extrabold syne text-xl text-green-300">🌿 Verdant Interiors</p>
+        <p class="text-gray-400 text-sm mt-1">Thoughtful design for beautiful spaces.</p>
+      </div>
+      <div class="flex gap-6 text-sm text-gray-400">
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#services" class="hover:text-white transition">Services</a>
+        <a href="#pricing" class="hover:text-white transition">Pricing</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </div>
+    </div>
+    <div class="border-t border-white/10 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-500">
+      <p>© 2025 Verdant Interiors · Bangalore</p>
+      <p>Website by <a href="index.html" class="text-green-400 underline">Root Web Studio</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

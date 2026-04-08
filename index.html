@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="aBI3zMwHZDRRsRX9IAfuZXELpru1m9tA0chqU8BeKEc" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Root Web — Web Design for Growing Businesses</title>
+  <meta name="description" content="We build affordable websites for small businesses in India starting at ₹2000.">
+  <link rel="icon" type="image/png" href="/logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent: #5b4bff;
+      --accent2: #ff6b4a;
+      --mint: #d4f5e9;
+      --lavender: #ede8ff;
+    }
+    body { font-family: 'DM Sans', sans-serif; background: #f8f7ff; color: #1a1a2e; }
+    h1, h2, h3, .syne { font-family: 'Syne', sans-serif; }
+
+    .hero-bg {
+      background: linear-gradient(135deg, #ede8ff 0%, #d4f5e9 50%, #ffe8e0 100%);
+    }
+    .btn-primary {
+      background: #5b4bff;
+      color: white;
+      padding: 0.75rem 1.75rem;
+      border-radius: 999px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: #4535ee; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(91,75,255,0.3); }
+    .btn-outline {
+      border: 2px solid #5b4bff;
+      color: #5b4bff;
+      padding: 0.7rem 1.75rem;
+      border-radius: 999px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+    .btn-outline:hover { background: #5b4bff; color: white; transform: translateY(-2px); }
+
+    .card {
+      background: white;
+      border-radius: 1.25rem;
+      box-shadow: 0 2px 20px rgba(91,75,255,0.07);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(91,75,255,0.13); }
+
+    .tag {
+      background: #ede8ff;
+      color: #5b4bff;
+      border-radius: 999px;
+      padding: 0.25rem 0.9rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-family: 'Syne', sans-serif;
+    }
+    .faq-item { border-bottom: 1px solid #ede8ff; }
+    .faq-answer { display: none; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-icon { transition: transform 0.2s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+    .nav-link { color: #555; font-size: 0.95rem; transition: color 0.2s; }
+    .nav-link:hover { color: #5b4bff; }
+
+    .process-step {
+      position: relative;
+    }
+    .process-step::after {
+      content: '→';
+      position: absolute;
+      right: -28px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #c4b8ff;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .process-step:last-child::after { display: none; }
+
+    @media (max-width: 768px) {
+      .process-step::after { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-purple-50">
+  <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+    <a href="index.html" class="syne font-800 text-xl font-extrabold text-[#5b4bff]">Root Web Studio</a>
+    <div class="hidden md:flex gap-8">
+      <a href="#demos" class="nav-link">Portfolio</a>
+      <a href="#process" class="nav-link">How It Works</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <a href="#pricing" class="btn-primary text-sm py-2 px-5">Get Started</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-bg min-h-[92vh] flex items-center">
+  <div class="max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="tag mb-5 inline-block">Web Design for India's Small Businesses</span>
+      <h1 class="font-bold leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+        Your business deserves a <span class="text-purple-600">real website.</span>
+      </h1>
+      <p class="text-lg text-gray-600 mb-8 max-w-md">We build clean, fast, mobile-ready websites starting at ₹2000. No tech knowledge needed — just tell us your idea.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#pricing" class="btn-primary">See Plans & Pricing</a>
+        <a href="#demos" class="btn-outline">View Our Demo Work</a>
+      </div>
+      <div class="flex gap-8 mt-10">
+
+        <div>
+          <p class="text-2xl font-extrabold syne text-[#5b4bff]">3 Days</p>
+          <p class="text-sm text-gray-500">Avg. Delivery</p>
+        </div>
+        <div>
+          <p class="text-2xl font-extrabold syne text-[#5b4bff]">100%</p>
+          <p class="text-sm text-gray-500">Mobile Ready</p>
+        </div>
+      </div>
+    </div>
+    <div class="hidden md:block">
+      <div class="bg-white rounded-2xl shadow-2xl p-6 border border-purple-100 rotate-1">
+        <div class="flex gap-2 mb-4">
+          <div class="w-3 h-3 rounded-full bg-red-400"></div>
+          <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+          <div class="w-3 h-3 rounded-full bg-green-400"></div>
+        </div>
+        <div class="bg-gradient-to-br from-purple-50 to-green-50 rounded-xl p-6">
+          <div class="h-4 bg-purple-200 rounded-full mb-3 w-3/4"></div>
+          <div class="h-3 bg-gray-200 rounded-full mb-2 w-full"></div>
+          <div class="h-3 bg-gray-200 rounded-full mb-5 w-5/6"></div>
+          <div class="flex gap-3 mb-6">
+            <div class="h-8 bg-[#5b4bff] rounded-full w-28"></div>
+            <div class="h-8 bg-purple-100 rounded-full w-24"></div>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="h-20 bg-white rounded-xl shadow-sm border border-purple-50"></div>
+            <div class="h-20 bg-white rounded-xl shadow-sm border border-purple-50"></div>
+            <div class="h-20 bg-white rounded-xl shadow-sm border border-purple-50"></div>
+            <div class="h-20 bg-white rounded-xl shadow-sm border border-purple-50"></div>
+          </div>
+        </div>
+        <div class="mt-4 flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-green-200 flex items-center justify-center text-green-700 text-xs font-bold">✓</div>
+          <p class="text-sm text-gray-600 font-medium">Live in 3–5 days. Mobile perfect.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEMOS -->
+<section id="demos" class="py-20 max-w-6xl mx-auto px-5">
+  <div class="text-center mb-12">
+    <span class="tag mb-3 inline-block">Our Creations</span>
+    <h2 class="text-4xl font-extrabold">Demo Collection</h2>
+    <p class="text-gray-500 mt-3 max-w-md mx-auto">Check out our portfolio of sample projects built to showcase the best of our design philosophy.</p>
+  </div>
+  <div class="grid md:grid-cols-2 gap-8">
+    <!-- Portfolio 1 -->
+    <a href="demo-portfolio1.html" class="card block overflow-hidden group">
+      <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 h-52 flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20" style="background: repeating-linear-gradient(45deg, #ff6b4a 0px, #ff6b4a 2px, transparent 2px, transparent 20px);"></div>
+        <div class="text-center z-10">
+          <p class="text-white text-3xl font-extrabold syne tracking-tight">IRONCORE</p>
+          <p class="text-orange-400 text-sm mt-1 font-semibold tracking-widest uppercase">Fitness & Gym</p>
+        </div>
+      </div>
+      <div class="p-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="font-bold syne text-lg">IronCore Gym</p>
+            <p class="text-gray-500 text-sm mt-1">Dark, bold premium gym website</p>
+          </div>
+          <span class="text-[#5b4bff] font-semibold text-sm group-hover:underline">View →</span>
+        </div>
+        <div class="flex gap-2 mt-4">
+          <span class="text-xs bg-gray-100 text-gray-600 rounded-full px-3 py-1">Dark Theme</span>
+          <span class="text-xs bg-gray-100 text-gray-600 rounded-full px-3 py-1">Bold Typography</span>
+          <span class="text-xs bg-gray-100 text-gray-600 rounded-full px-3 py-1">Mobile Ready</span>
+        </div>
+      </div>
+    </a>
+    <!-- Portfolio 2 -->
+    <a href="demo-portfolio2.html" class="card block overflow-hidden group">
+      <div class="bg-gradient-to-br from-rose-50 via-amber-50 to-pink-100 h-52 flex items-center justify-center relative overflow-hidden">
+        <div class="text-center">
+          <p class="text-rose-700 text-3xl font-extrabold syne tracking-tight">Bloomed</p>
+          <p class="text-amber-600 text-sm mt-1 font-semibold tracking-widest uppercase">Salon & Cafe</p>
+        </div>
+      </div>
+      <div class="p-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="font-bold syne text-lg">Bloomed Salon</p>
+            <p class="text-gray-500 text-sm mt-1">Light, elegant small business site</p>
+          </div>
+          <span class="text-[#5b4bff] font-semibold text-sm group-hover:underline">View →</span>
+        </div>
+        <div class="flex gap-2 mt-4">
+          <span class="text-xs bg-rose-50 text-rose-600 rounded-full px-3 py-1">Light Theme</span>
+          <span class="text-xs bg-rose-50 text-rose-600 rounded-full px-3 py-1">Clean Aesthetic</span>
+          <span class="text-xs bg-rose-50 text-rose-600 rounded-full px-3 py-1">Booking Ready</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <span class="tag mb-3 inline-block">Simple Process</span>
+      <h2 class="text-4xl font-extrabold">From idea to live in days</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 relative">
+      <div class="card p-8 text-center process-step">
+        <div class="w-16 h-16 rounded-2xl bg-[#ede8ff] flex items-center justify-center mx-auto mb-5">
+          <span class="text-3xl">💬</span>
+        </div>
+        <p class="text-xs font-bold text-[#5b4bff] tracking-widest uppercase mb-2">Step 01</p>
+        <h3 class="text-xl font-bold syne mb-3">You Ask</h3>
+        <p class="text-gray-500 text-sm">Fill our short form, tell us your business and budget. No calls needed.</p>
+      </div>
+      <div class="card p-8 text-center process-step">
+        <div class="w-16 h-16 rounded-2xl bg-[#d4f5e9] flex items-center justify-center mx-auto mb-5">
+          <span class="text-3xl">🛠️</span>
+        </div>
+        <p class="text-xs font-bold text-[#5b4bff] tracking-widest uppercase mb-2">Step 02</p>
+        <h3 class="text-xl font-bold syne mb-3">We Build</h3>
+        <p class="text-gray-500 text-sm">We design and develop your site in 3–5 days, exactly how you want it.</p>
+      </div>
+      <div class="card p-8 text-center process-step">
+        <div class="w-16 h-16 rounded-2xl bg-[#ffe8e0] flex items-center justify-center mx-auto mb-5">
+          <span class="text-3xl">🚀</span>
+        </div>
+        <p class="text-xs font-bold text-[#5b4bff] tracking-widest uppercase mb-2">Step 03</p>
+        <h3 class="text-xl font-bold syne mb-3">It's Live</h3>
+        <p class="text-gray-500 text-sm">Your site goes live. We help you deploy it free or guide you through hosting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-20 max-w-6xl mx-auto px-5">
+  <div class="text-center mb-14">
+    <span class="tag mb-3 inline-block">Pricing</span>
+    <h2 class="text-4xl font-extrabold">Simple, honest pricing</h2>
+    <p class="text-gray-500 mt-3">No hidden fees. One-time payment. You own your site.</p>
+  </div>
+  <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <!-- Basic -->
+    <div class="card p-8 border-2 border-purple-100">
+      <div class="flex items-start justify-between mb-6">
+        <div>
+          <span class="tag mb-2 inline-block">Basic</span>
+          <h3 class="text-3xl font-extrabold syne mt-2">₹2,000</h3>
+          <p class="text-gray-500 text-sm mt-1">One-time · Perfect starter site</p>
+        </div>
+        <span class="text-4xl">🌱</span>
+      </div>
+      <ul class="space-y-3 mb-8">
+        <li class="flex items-center gap-3 text-sm"><span class="text-green-500 font-bold">✓</span> 1-page website</li>
+        <li class="flex items-center gap-3 text-sm"><span class="text-green-500 font-bold">✓</span> Mobile responsive</li>
+        <li class="flex items-center gap-3 text-sm"><span class="text-green-500 font-bold">✓</span> WhatsApp contact button</li>
+        <li class="flex items-center gap-3 text-sm"><span class="text-green-500 font-bold">✓</span> Clean, modern design</li>
+        <li class="flex items-center gap-3 text-sm"><span class="text-green-500 font-bold">✓</span> Delivered in 2–3 days</li>
+        <li class="flex items-center gap-3 text-sm text-gray-400"><span>✗</span> Multi-section layout</li>
+        <li class="flex items-center gap-3 text-sm text-gray-400"><span>✗</span> Testimonials & Pricing section</li>
+      </ul>
+      <div class="flex flex-col gap-3">
+        <a href="basic.html" class="btn-primary text-center">Get Started →</a>
+        <a href="demo-basic.html" class="btn-outline text-center text-sm py-2">View Demo</a>
+      </div>
+    </div>
+    <!-- Standard -->
+    <div class="card p-8 border-2 border-[#5b4bff] relative overflow-hidden">
+      <div class="absolute top-4 right-4 bg-[#5b4bff] text-white text-xs font-bold px-3 py-1 rounded-full syne">Most Popular</div>
+      <div class="flex items-start justify-between mb-6">
+        <div>
+          <span class="inline-block bg-[#5b4bff] text-white text-xs font-bold px-3 py-1 rounded-full syne mb-2 uppercase tracking-wide">Standard</span>
+          <h3 class="text-3xl font-extrabold syne mt-2">₹5,000</h3>
+          <p class="text-gray-500 text-sm mt-1">One-time · Full business website</p>
+        </div>
+        <span class="text-4xl">🌳</span>
+      </div>
+      <ul class="space-y-3 mb-8">
+        <li class="flex items-center gap-3 text-sm"><span class="text-[#5b4bff] font-bold">✓</span> Multi-section website</li>
+        <li class="flex items-center gap-3 text-sm"><span class="text-[#5b4bff] font-bold">✓</span> Mobile responsive</li>
+        <li class="flex items-center gap-3 text-sm"><span class="text-[#5b4bff] font-bold">✓</span> Premium UI design</li>
+        <li class="flex items-center gap-3 text-sm"><span class="text-[#5b4bff] font-bold">✓</span> Contact form integration</li>
+        <li class="flex items-center gap-3 text-sm"><span class="text-[#5b4bff] font-bold">✓</span> Testimonials & Pricing sections</li>
+        <li class="flex items-center gap-3 text-sm"><span class="text-[#5b4bff] font-bold">✓</span> Delivered in 4–5 days</li>
+        <li class="flex items-center gap-3 text-sm"><span class="text-[#5b4bff] font-bold">✓</span> 1 revision round included</li>
+      </ul>
+      <div class="flex flex-col gap-3">
+        <a href="standard.html" class="btn-primary text-center" style="background:#5b4bff;">Get Started →</a>
+        <a href="demo-standard.html" class="btn-outline text-center text-sm py-2">View Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-20 bg-white">
+  <div class="max-w-3xl mx-auto px-5">
+    <div class="text-center mb-12">
+      <span class="tag mb-3 inline-block">FAQ</span>
+      <h2 class="text-4xl font-extrabold">Common questions</h2>
+    </div>
+    <div class="space-y-0">
+      <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center">
+          <h3 class="font-semibold syne text-lg">How long does it take to build my website?</h3>
+          <span class="faq-icon text-[#5b4bff] text-2xl font-light ml-4">+</span>
+        </div>
+        <div class="faq-answer pt-3 text-gray-500 text-sm">The Basic plan takes 2–3 days and the Standard plan takes 4–5 days. We work fast without cutting corners. You'll receive your site files via email or we help you deploy it directly.</div>
+      </div>
+      <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center">
+          <h3 class="font-semibold syne text-lg">Do I need to pay for hosting separately?</h3>
+          <span class="faq-icon text-[#5b4bff] text-2xl font-light ml-4">+</span>
+        </div>
+        <div class="faq-answer pt-3 text-gray-500 text-sm">No! We build static websites that can be hosted for free on platforms like Netlify, Vercel, or GitHub Pages. We guide you through it step by step. You only pay for a domain if you want a custom one (usually ₹500–₹700/year).</div>
+      </div>
+      <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center">
+          <h3 class="font-semibold syne text-lg">Can I request changes after delivery?</h3>
+          <span class="faq-icon text-[#5b4bff] text-2xl font-light ml-4">+</span>
+        </div>
+        <div class="faq-answer pt-3 text-gray-500 text-sm">Yes! The Standard plan includes 1 free revision round. For Basic, small text/color changes are included. Additional revisions or design changes can be requested at a small fee.</div>
+      </div>
+      <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center">
+          <h3 class="font-semibold syne text-lg">Will my website work on mobile?</h3>
+          <span class="faq-icon text-[#5b4bff] text-2xl font-light ml-4">+</span>
+        </div>
+        <div class="faq-answer pt-3 text-gray-500 text-sm">Absolutely. Every single site we build is mobile-first. We test on phone screens before delivery. Most of your visitors will be on mobile, and your site will look perfect.</div>
+      </div>
+      <div class="faq-item py-5 cursor-pointer" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center">
+          <h3 class="font-semibold syne text-lg">What information do you need from me?</h3>
+          <span class="faq-icon text-[#5b4bff] text-2xl font-light ml-4">+</span>
+        </div>
+        <div class="faq-answer pt-3 text-gray-500 text-sm">Just the basics — your business name, what you do, any logo or images you have, your contact number, and a rough idea of the look you want. We'll take it from there.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 max-w-6xl mx-auto px-5">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="tag mb-4 inline-block">Contact</span>
+      <h2 class="text-4xl font-extrabold mb-4">Ready to get your website?</h2>
+      <p class="text-gray-500 mb-6">Fill the form and we'll get back to you within 24 hours. No spam, no sales pitch — just a quick chat about your site.</p>
+      <div class="space-y-4">
+        <div class="flex items-center gap-3 text-sm text-gray-600">
+          <div class="w-10 h-10 rounded-xl bg-[#ede8ff] flex items-center justify-center">📧</div>
+          <div>
+            <p class="font-semibold">Email</p>
+            <p class="text-gray-400">rootweb.website.designers@gmail.com</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 text-sm text-gray-600">
+          <div class="w-10 h-10 rounded-xl bg-[#d4f5e9] flex items-center justify-center">⏱️</div>
+          <div>
+            <p class="font-semibold">Response Time</p>
+            <p class="text-gray-400">Within 24 hours on business days</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3 text-sm text-gray-600">
+          <div class="w-10 h-10 rounded-xl bg-[#ffe8e0] flex items-center justify-center">🌍</div>
+          <div>
+            <p class="font-semibold">Location</p>
+            <p class="text-gray-400">Serving clients across India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card p-8">
+      <h3 class="text-xl font-bold syne mb-2">Send us a message</h3>
+      <p class="text-gray-500 text-sm mb-6">We collect: your name, business type, budget, and message. Responses go to <span class="text-[#5b4bff]">rootweb.website.designers@gmail.com</span></p>
+      <a href="https://forms.gle/GSHn36Yp8Li5qnQL7" target="_blank" class="btn-primary w-full text-center block text-lg py-4">
+        Open Contact Form →
+      </a>
+      <p class="text-xs text-gray-400 mt-4 text-center">Opens a Google Form — takes 2 minutes to fill</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#1a1a2e] text-white py-12">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="grid md:grid-cols-3 gap-8 mb-10">
+      <div>
+        <p class="text-2xl font-extrabold syne text-[#a896ff] mb-3">Root Web Studio</p>
+        <p class="text-gray-400 text-sm">Affordable, beautiful websites for Indian businesses. We help you grow online without the big agency price tag.</p>
+      </div>
+      <div>
+        <p class="font-bold syne mb-4 text-sm uppercase tracking-widest text-gray-400">Pages</p>
+        <div class="space-y-2">
+          <a href="basic.html" class="block text-gray-300 hover:text-white text-sm transition">Basic Plan</a>
+          <a href="standard.html" class="block text-gray-300 hover:text-white text-sm transition">Standard Plan</a>
+          <a href="demo-portfolio1.html" class="block text-gray-300 hover:text-white text-sm transition">Portfolio Demo 1</a>
+          <a href="demo-portfolio2.html" class="block text-gray-300 hover:text-white text-sm transition">Portfolio Demo 2</a>
+        </div>
+      </div>
+      <div>
+        <p class="font-bold syne mb-4 text-sm uppercase tracking-widest text-gray-400">Contact</p>
+        <p class="text-gray-400 text-sm">rootweb.website.designers@gmail.com</p>
+        <a href="https://forms.gle/GSHn36Yp8Li5qnQL7" target="_blank" class="inline-block mt-4 btn-primary text-sm py-2">Contact Us</a>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-500">
+      <p>© 2025 Root Web Studio. All rights reserved.</p>
+      <p>Designed with care for growing businesses 🌱</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el) {
+    const isOpen = el.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) el.classList.add('open');
+  }
+</script>
+</body>
+</html>

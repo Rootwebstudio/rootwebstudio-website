@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IronCore Gym — Forge Your Best Self</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --orange: #ff4f1f; --dark: #0d0d0d; --mid: #1a1a1a; }
+    body { font-family: 'Barlow', sans-serif; background: #0d0d0d; color: #ffffff; overflow-x: hidden; }
+    h1, h2, h3, .bebas { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.03em; }
+
+    .btn-fire {
+      background: #ff4f1f;
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .btn-fire:hover { background: #e83d0d; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(255,79,31,0.4); }
+    .btn-ghost {
+      border: 2px solid rgba(255,255,255,0.3);
+      color: white;
+      padding: 0.9rem 2.5rem;
+      border-radius: 6px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .btn-ghost:hover { border-color: #ff4f1f; color: #ff4f1f; }
+
+    .plan-card { background: #1a1a1a; border-radius: 12px; border: 1px solid #2a2a2a; transition: all 0.2s; }
+    .plan-card:hover { border-color: #ff4f1f; transform: translateY(-4px); }
+
+    .demo-banner { background: #ff4f1f; color: white; text-align: center; padding: 0.6rem 1rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; }
+
+    .stat-card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 12px; padding: 1.5rem; text-align: center; }
+
+    .stripes { background: repeating-linear-gradient(45deg, rgba(255,79,31,0.05) 0, rgba(255,79,31,0.05) 1px, transparent 1px, transparent 24px); }
+  </style>
+</head>
+<body>
+
+<!-- DEMO BANNER -->
+<div class="demo-banner">
+  🔥 ROOT WEB DEMO STUDIO — Portfolio Example &nbsp;·&nbsp; <a href="index.html" class="underline">Get your site starting at ₹2,000 →</a>
+</div>
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-black/90 backdrop-blur border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[#ff4f1f] rounded-lg flex items-center justify-center text-white font-black text-xl" style="font-family: 'Bebas Neue';">IC</div>
+      <p class="bebas text-2xl tracking-wide text-white">IRONCORE</p>
+    </div>
+    <div class="hidden md:flex gap-8 text-sm text-gray-400 font-medium tracking-wide uppercase">
+      <a href="#about" class="hover:text-white transition">About</a>
+      <a href="#programs" class="hover:text-white transition">Programs</a>
+      <a href="#pricing" class="hover:text-white transition">Pricing</a>
+      <a href="#contact" class="hover:text-white transition">Contact</a>
+    </div>
+    <a href="#pricing" class="btn-fire text-sm py-3 px-6">Join Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative min-h-screen flex items-center overflow-hidden stripes">
+  <div class="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent z-10"></div>
+  <div class="absolute inset-0 flex items-end justify-end overflow-hidden opacity-20">
+    <div class="text-[40vw] leading-none font-black" style="font-family: 'Bebas Neue'; color: #ff4f1f; margin-right: -4vw; margin-bottom: -4vw;">IC</div>
+  </div>
+  <div class="max-w-7xl mx-auto px-5 py-24 relative z-20">
+    <div class="max-w-2xl">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="h-px w-12 bg-[#ff4f1f]"></div>
+        <p class="text-[#ff4f1f] text-sm font-bold tracking-widest uppercase">Chennai's Premier Gym</p>
+      </div>
+      <h1 class="bebas text-8xl md:text-9xl leading-none mb-5 text-white">
+        FORGE<br/>YOUR<br/><span class="text-[#ff4f1f]">BEST SELF.</span>
+      </h1>
+      <p class="text-gray-400 text-lg mb-8 max-w-md">No excuses. No shortcuts. Just iron, discipline, and results. IronCore is where transformations happen.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#pricing" class="btn-fire text-base">Start Free Trial →</a>
+        <a href="#programs" class="btn-ghost text-base">Explore Programs</a>
+      </div>
+      <div class="grid grid-cols-3 gap-4 mt-12 max-w-sm">
+        <div class="stat-card">
+          <p class="bebas text-4xl text-[#ff4f1f]">10K+</p>
+          <p class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Members</p>
+        </div>
+        <div class="stat-card">
+          <p class="bebas text-4xl text-[#ff4f1f]">15+</p>
+          <p class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Coaches</p>
+        </div>
+        <div class="stat-card">
+          <p class="bebas text-4xl text-[#ff4f1f]">5 Yrs</p>
+          <p class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Operating</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 bg-[#111]">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-px w-12 bg-[#ff4f1f]"></div>
+          <p class="text-[#ff4f1f] text-sm font-bold tracking-widest uppercase">Our Philosophy</p>
+        </div>
+        <h2 class="bebas text-6xl md:text-7xl mb-6 leading-none">WE DON'T<br/>JUST BUILD<br/><span class="text-[#ff4f1f]">BODIES.</span></h2>
+        <p class="text-gray-400 mb-4">IronCore was built for people who are serious about change. We're not a fancy spa-gym with a smoothie bar. We're a place where real work gets done.</p>
+        <p class="text-gray-400 mb-8">With 15+ certified coaches, elite equipment, and programs designed for every fitness level — beginners and athletes both thrive here.</p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 rounded-full bg-[#ff4f1f]"></div>
+            <span class="text-sm text-gray-300">Elite equipment</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 rounded-full bg-[#ff4f1f]"></div>
+            <span class="text-sm text-gray-300">Certified trainers</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 rounded-full bg-[#ff4f1f]"></div>
+            <span class="text-sm text-gray-300">Open 5am – 11pm</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 rounded-full bg-[#ff4f1f]"></div>
+            <span class="text-sm text-gray-300">Nutrition guidance</span>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-[#1a1a1a] rounded-2xl p-8 border border-white/5 flex items-center justify-center text-7xl">🏋️</div>
+        <div class="bg-[#ff4f1f]/10 rounded-2xl p-8 border border-[#ff4f1f]/20 flex items-center justify-center text-7xl mt-8">💪</div>
+        <div class="bg-[#ff4f1f]/10 rounded-2xl p-8 border border-[#ff4f1f]/20 flex items-center justify-center text-7xl">🥊</div>
+        <div class="bg-[#1a1a1a] rounded-2xl p-8 border border-white/5 flex items-center justify-center text-7xl mt-8">🧘</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs" class="py-24 bg-[#0d0d0d] stripes">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <div class="h-px w-12 bg-[#ff4f1f]"></div>
+        <p class="text-[#ff4f1f] text-sm font-bold tracking-widest uppercase">Programs</p>
+        <div class="h-px w-12 bg-[#ff4f1f]"></div>
+      </div>
+      <h2 class="bebas text-6xl">TRAIN YOUR WAY</h2>
+      <p class="text-gray-400 mt-3">Every goal, every level. We have a program for you.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="plan-card p-7 group">
+        <div class="text-5xl mb-4">🏋️</div>
+        <p class="text-[#ff4f1f] text-xs font-bold tracking-widest uppercase mb-2">Strength</p>
+        <h3 class="bebas text-3xl mb-3">POWERLIFTING</h3>
+        <p class="text-gray-400 text-sm">Build raw, functional strength with structured progressive overload programs. Squat, bench, deadlift — master the basics and go beyond.</p>
+        <div class="mt-5 h-px bg-white/10"></div>
+        <p class="text-gray-500 text-xs mt-4">4 sessions/week · All levels</p>
+      </div>
+      <div class="plan-card p-7 border-[#ff4f1f]/40">
+        <div class="text-5xl mb-4">🥊</div>
+        <p class="text-[#ff4f1f] text-xs font-bold tracking-widest uppercase mb-2">Combat</p>
+        <h3 class="bebas text-3xl mb-3">MMA & BOXING</h3>
+        <p class="text-gray-400 text-sm">Learn real martial arts from pro fighters. Get fit while mastering striking, grappling, and self-defense. Beginners welcome.</p>
+        <div class="mt-5 h-px bg-white/10"></div>
+        <p class="text-gray-500 text-xs mt-4">3 sessions/week · Beginner–Advanced</p>
+      </div>
+      <div class="plan-card p-7">
+        <div class="text-5xl mb-4">🔥</div>
+        <p class="text-[#ff4f1f] text-xs font-bold tracking-widest uppercase mb-2">Conditioning</p>
+        <h3 class="bebas text-3xl mb-3">HIIT & CARDIO</h3>
+        <p class="text-gray-400 text-sm">Burn fat, build endurance, and transform your body composition. High-intensity group classes led by elite coaches.</p>
+        <div class="mt-5 h-px bg-white/10"></div>
+        <p class="text-gray-500 text-xs mt-4">Daily classes · All fitness levels</p>
+      </div>
+      <div class="plan-card p-7">
+        <div class="text-5xl mb-4">🧘</div>
+        <p class="text-[#ff4f1f] text-xs font-bold tracking-widest uppercase mb-2">Recovery</p>
+        <h3 class="bebas text-3xl mb-3">YOGA & MOBILITY</h3>
+        <p class="text-gray-400 text-sm">Recovery matters as much as training. Improve flexibility, reduce injury risk, and enhance performance with guided mobility work.</p>
+        <div class="mt-5 h-px bg-white/10"></div>
+        <p class="text-gray-500 text-xs mt-4">5 sessions/week · All levels</p>
+      </div>
+      <div class="plan-card p-7">
+        <div class="text-5xl mb-4">🏃</div>
+        <p class="text-[#ff4f1f] text-xs font-bold tracking-widest uppercase mb-2">Transformation</p>
+        <h3 class="bebas text-3xl mb-3">FAT LOSS CAMP</h3>
+        <p class="text-gray-400 text-sm">8-week structured program combining training and nutrition for maximum fat loss results. Coached every step of the way.</p>
+        <div class="mt-5 h-px bg-white/10"></div>
+        <p class="text-gray-500 text-xs mt-4">8-week program · Limited spots</p>
+      </div>
+      <div class="plan-card p-7">
+        <div class="text-5xl mb-4">👤</div>
+        <p class="text-[#ff4f1f] text-xs font-bold tracking-widest uppercase mb-2">Personal</p>
+        <h3 class="bebas text-3xl mb-3">1-ON-1 COACHING</h3>
+        <p class="text-gray-400 text-sm">Personalized program built around your goals, schedule, and body. Maximum results with undivided coach attention.</p>
+        <div class="mt-5 h-px bg-white/10"></div>
+        <p class="text-gray-500 text-xs mt-4">Custom schedule · Results guaranteed</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-24 bg-[#111]">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        <div class="h-px w-12 bg-[#ff4f1f]"></div>
+        <p class="text-[#ff4f1f] text-sm font-bold tracking-widest uppercase">Membership</p>
+        <div class="h-px w-12 bg-[#ff4f1f]"></div>
+      </div>
+      <h2 class="bebas text-6xl">CHOOSE YOUR PLAN</h2>
+      <p class="text-gray-400 mt-3">No lock-in contracts. Cancel anytime.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="plan-card p-8">
+        <p class="text-gray-400 font-bold tracking-widest uppercase text-xs mb-4">Monthly</p>
+        <p class="bebas text-5xl mb-2">₹1,499<span class="text-2xl text-gray-500">/mo</span></p>
+        <p class="text-gray-500 text-sm mb-6">Gym access only</p>
+        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+          <li class="flex gap-2"><span class="text-[#ff4f1f]">✓</span> Full gym access</li>
+          <li class="flex gap-2"><span class="text-[#ff4f1f]">✓</span> Locker room</li>
+          <li class="flex gap-2"><span class="text-[#ff4f1f]">✓</span> Free Wi-Fi</li>
+          <li class="flex gap-2 text-gray-600"><span>—</span> Group classes</li>
+          <li class="flex gap-2 text-gray-600"><span>—</span> Personal training</li>
+        </ul>
+        <a href="#contact" class="btn-ghost w-full text-center block py-3">Get Started</a>
+      </div>
+      <div class="plan-card p-8 border-[#ff4f1f]" style="border-color:#ff4f1f; background: linear-gradient(135deg, #1a1a1a, #200e08);">
+        <div class="flex items-center justify-between mb-4">
+          <p class="text-[#ff4f1f] font-bold tracking-widest uppercase text-xs">Pro · Best Value</p>
+          <span class="bg-[#ff4f1f] text-white text-xs font-bold px-2 py-1 rounded">Popular</span>
+        </div>
+        <p class="bebas text-5xl mb-2">₹2,499<span class="text-2xl text-gray-500">/mo</span></p>
+        <p class="text-gray-500 text-sm mb-6">Classes included</p>
+        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+          <li class="flex gap-2"><span class="text-[#ff4f1f]">✓</span> Full gym access</li>
+          <li class="flex gap-2"><span class="text-[#ff4f1f]">✓</span> All group classes</li>
+          <li class="flex gap-2"><span class="text-[#ff4f1f]">✓</span> Nutrition tracking</li>
+          <li class="flex gap-2"><span class="text-[#ff4f1f]">✓</span> Locker + towel</li>
+          <li class="flex gap-2 text-gray-600"><span>—</span> Personal training</li>
+        </ul>
+        <a href="#contact" class="btn-fire w-full text-center block py-3">Join Pro →</a>
+      </div>
+      <div class="plan-card p-8">
+        <p class="text-gray-400 font-bold tracking-widest uppercase text-xs mb-4">Elite</p>
+        <p class="bebas text-5xl mb-2">₹5,999<span class="text-2xl text-gray-500">/mo</span></p>
+        <p class="text-gray-500 text-sm mb-6">Everything included</p>
+        <ul class="space-y-3 text-sm text-gray-300 mb-8">
+          <li class="flex gap-2"><span class="text-[#ff4f1f]">✓</span> Full gym access</li>
+          <li class="flex gap-2"><span class="text-[#ff4f1f]">✓</span> All group classes</li>
+          <li class="flex gap-2"><span class="text-[#ff4f1f]">✓</span> 8 PT sessions/month</li>
+          <li class="flex gap-2"><span class="text-[#ff4f1f]">✓</span> Nutrition coaching</li>
+          <li class="flex gap-2"><span class="text-[#ff4f1f]">✓</span> Priority booking</li>
+        </ul>
+        <a href="#contact" class="btn-ghost w-full text-center block py-3">Go Elite</a>
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <a href="#contact" class="text-[#ff4f1f] text-sm font-semibold hover:underline">🔥 First week FREE for new members · No credit card needed</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 bg-[#0d0d0d]">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <div class="flex items-center justify-center gap-3 mb-4">
+      <div class="h-px w-12 bg-[#ff4f1f]"></div>
+      <p class="text-[#ff4f1f] text-sm font-bold tracking-widest uppercase">Contact</p>
+      <div class="h-px w-12 bg-[#ff4f1f]"></div>
+    </div>
+    <h2 class="bebas text-7xl mb-4">START TODAY.</h2>
+    <p class="text-gray-400 mb-8 max-w-md mx-auto">Visit us, call us, or WhatsApp us. Our team will get you started on the right program immediately.</p>
+    <div class="flex flex-wrap gap-4 justify-center mb-14">
+      <a href="https://wa.me/919888877777" class="btn-fire text-base px-8">💬 WhatsApp Us</a>
+      <a href="tel:+919888877777" class="btn-ghost text-base px-8">📞 Call Now</a>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 border border-white/5">
+        <p class="text-3xl mb-3">📍</p>
+        <p class="font-bold uppercase tracking-wider text-sm">Location</p>
+        <p class="text-gray-400 text-sm mt-2">14, Velachery Main Road<br/>Chennai – 600042</p>
+      </div>
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 border border-white/5">
+        <p class="text-3xl mb-3">🕐</p>
+        <p class="font-bold uppercase tracking-wider text-sm">Hours</p>
+        <p class="text-gray-400 text-sm mt-2">Mon–Sat: 5am – 11pm<br/>Sunday: 7am – 8pm</p>
+      </div>
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 border border-white/5">
+        <p class="text-3xl mb-3">📞</p>
+        <p class="font-bold uppercase tracking-wider text-sm">Phone</p>
+        <p class="text-gray-400 text-sm mt-2">+91 98888 77777<br/>WhatsApp available</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black border-t border-white/5 py-10">
+  <div class="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="bebas text-3xl tracking-wide">IRON<span class="text-[#ff4f1f]">CORE</span></p>
+    <p class="text-gray-600 text-sm">© 2025 IronCore Gym · Chennai</p>
+    <p class="text-gray-600 text-xs">Website by <a href="index.html" class="text-[#ff4f1f] underline">Root Web Studio</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

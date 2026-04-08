@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sparks Electricals — Trusted Electrical Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'DM Sans', sans-serif; background: #ffffff; color: #1a1a2e; }
+    h1, h2, h3, .syne { font-family: 'Syne', sans-serif; }
+
+    .btn-wa {
+      background: #25D366;
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 999px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s;
+      box-shadow: 0 4px 18px rgba(37,211,102,0.3);
+    }
+    .btn-wa:hover { background: #1ebe57; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(37,211,102,0.4); }
+
+    .btn-outline {
+      border: 2px solid #ff6b2b;
+      color: #ff6b2b;
+      padding: 0.9rem 2rem;
+      border-radius: 999px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+    .btn-outline:hover { background: #ff6b2b; color: white; transform: translateY(-2px); }
+
+    .service-card {
+      background: white;
+      border-radius: 1.25rem;
+      padding: 1.75rem;
+      border: 1px solid #f0e8ff;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(255,107,43,0.12); }
+
+    .demo-banner {
+      background: #ff6b2b;
+      color: white;
+      text-align: center;
+      padding: 0.6rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+  </style>
+</head>
+<body>
+
+<!-- DEMO BANNER -->
+<div class="demo-banner">
+  🎨 This is a Root Web Studio demo — Basic Plan example site &nbsp;·&nbsp; <a href="basic.html" class="underline">Get yours for ₹2,000 →</a>
+</div>
+
+<!-- HEADER -->
+<header class="bg-white sticky top-0 z-40 border-b border-orange-50 shadow-sm">
+  <div class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white font-extrabold syne text-lg">⚡</div>
+      <div>
+        <p class="font-extrabold syne text-lg leading-none">Sparks Electricals</p>
+        <p class="text-xs text-gray-400">Licensed & Trusted</p>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-6 text-sm text-gray-600">
+      <a href="#about" class="hover:text-orange-500 transition">About</a>
+      <a href="#services" class="hover:text-orange-500 transition">Services</a>
+      <a href="#contact" class="hover:text-orange-500 transition">Contact</a>
+    </nav>
+    <a href="https://wa.me/919999999999" class="bg-[#25D366] text-white text-xs font-bold syne px-4 py-2 rounded-full hover:bg-[#1ebe57] transition">Chat on WhatsApp</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="bg-gradient-to-br from-orange-50 via-yellow-50 to-white min-h-[85vh] flex items-center">
+  <div class="max-w-5xl mx-auto px-5 py-16 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <span class="inline-block bg-orange-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full syne mb-5 uppercase tracking-wider">Chennai's Trusted Electricians</span>
+      <h1 class="text-5xl font-extrabold leading-tight mb-5">Fast, Safe<br/><span class="text-orange-500">Electrical Work</span><br/>At Your Door.</h1>
+      <p class="text-gray-600 mb-8 max-w-md">From wiring to appliance fitting, we solve every electrical problem quickly and safely. Available 7 days a week.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="https://wa.me/919999999999" class="btn-wa">
+          <span>💬</span> Chat on WhatsApp
+        </a>
+        <a href="#services" class="btn-outline">Our Services</a>
+      </div>
+      <div class="grid grid-cols-3 gap-4 mt-10">
+        <div class="text-center p-4 rounded-2xl bg-white shadow-sm border border-orange-50">
+          <p class="text-2xl font-extrabold syne text-orange-500">500+</p>
+          <p class="text-xs text-gray-500 mt-1">Jobs Done</p>
+        </div>
+        <div class="text-center p-4 rounded-2xl bg-white shadow-sm border border-orange-50">
+          <p class="text-2xl font-extrabold syne text-orange-500">7★</p>
+          <p class="text-xs text-gray-500 mt-1">Years Exp.</p>
+        </div>
+        <div class="text-center p-4 rounded-2xl bg-white shadow-sm border border-orange-50">
+          <p class="text-2xl font-extrabold syne text-orange-500">Same Day</p>
+          <p class="text-xs text-gray-500 mt-1">Service</p>
+        </div>
+      </div>
+    </div>
+    <div class="hidden md:flex items-center justify-center">
+      <div class="relative">
+        <div class="w-72 h-72 rounded-3xl bg-gradient-to-br from-orange-400 to-yellow-400 flex items-center justify-center shadow-2xl">
+          <span class="text-9xl">⚡</span>
+        </div>
+        <div class="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow-lg p-4 border border-orange-100">
+          <p class="text-sm font-bold syne">Available Today</p>
+          <div class="flex items-center gap-2 mt-1">
+            <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+            <p class="text-xs text-gray-500">Open 7am – 9pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-5">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl p-10 flex items-center justify-center">
+        <div class="text-center">
+          <div class="text-8xl mb-4">👨‍🔧</div>
+          <p class="font-extrabold syne text-xl">Ravi Kumar</p>
+          <p class="text-gray-500 text-sm">Founder & Lead Electrician</p>
+          <p class="text-xs mt-2 bg-orange-100 text-orange-600 rounded-full px-3 py-1 inline-block">Licensed by TNEB</p>
+        </div>
+      </div>
+      <div>
+        <span class="inline-block bg-orange-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full syne mb-4 uppercase tracking-wider">About Us</span>
+        <h2 class="text-4xl font-extrabold mb-4">Local. Reliable.<br/>No Surprises.</h2>
+        <p class="text-gray-600 mb-4">We've been solving electrical problems in Chennai since 2017. No inflated quotes, no unnecessary work — just honest service at fair prices.</p>
+        <p class="text-gray-600 mb-6">Every job comes with a workmanship guarantee. If something goes wrong, we fix it. Simple as that.</p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="flex items-center gap-3 text-sm">
+            <span class="text-green-500 font-bold text-lg">✓</span>
+            <span>Licensed technicians</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm">
+            <span class="text-green-500 font-bold text-lg">✓</span>
+            <span>Same-day service</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm">
+            <span class="text-green-500 font-bold text-lg">✓</span>
+            <span>Transparent pricing</span>
+          </div>
+          <div class="flex items-center gap-3 text-sm">
+            <span class="text-green-500 font-bold text-lg">✓</span>
+            <span>Workmanship warranty</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-5">
+    <div class="text-center mb-12">
+      <span class="inline-block bg-orange-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full syne mb-3 uppercase tracking-wider">Services</span>
+      <h2 class="text-4xl font-extrabold">What we do</h2>
+      <p class="text-gray-500 mt-3">From small repairs to full installations — we do it all.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="service-card">
+        <span class="text-4xl mb-4 block">🔌</span>
+        <h3 class="font-bold syne text-lg mb-2">Wiring & Rewiring</h3>
+        <p class="text-gray-500 text-sm">Complete house wiring for new buildings or rewiring for old homes. Safe and up to code.</p>
+      </div>
+      <div class="service-card">
+        <span class="text-4xl mb-4 block">💡</span>
+        <h3 class="font-bold syne text-lg mb-2">Light & Fan Fitting</h3>
+        <p class="text-gray-500 text-sm">Installation and repair of all types of lighting fixtures and ceiling fans.</p>
+      </div>
+      <div class="service-card">
+        <span class="text-4xl mb-4 block">🏠</span>
+        <h3 class="font-bold syne text-lg mb-2">MCB & Switchboard</h3>
+        <p class="text-gray-500 text-sm">MCB replacement, switchboard upgrades, and circuit breaker installation.</p>
+      </div>
+      <div class="service-card">
+        <span class="text-4xl mb-4 block">❄️</span>
+        <h3 class="font-bold syne text-lg mb-2">AC Installation</h3>
+        <p class="text-gray-500 text-sm">Split AC and window AC installation and electrical setup for all brands.</p>
+      </div>
+      <div class="service-card">
+        <span class="text-4xl mb-4 block">🔧</span>
+        <h3 class="font-bold syne text-lg mb-2">Fault Repair</h3>
+        <p class="text-gray-500 text-sm">Quick diagnosis and repair of electrical faults, power cuts, and short circuits.</p>
+      </div>
+      <div class="service-card">
+        <span class="text-4xl mb-4 block">☀️</span>
+        <h3 class="font-bold syne text-lg mb-2">Solar Connections</h3>
+        <p class="text-gray-500 text-sm">Electrical wiring and grid connection for residential solar panel systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <span class="inline-block bg-green-100 text-green-700 text-xs font-bold px-3 py-1 rounded-full syne mb-4 uppercase tracking-wider">Get In Touch</span>
+    <h2 class="text-4xl font-extrabold mb-4">Need an electrician?<br/>We're one message away.</h2>
+    <p class="text-gray-500 mb-8 max-w-md mx-auto">Message us on WhatsApp and we'll confirm your booking within minutes. No waiting, no long calls.</p>
+    <a href="https://wa.me/919999999999" class="btn-wa text-xl px-10 py-5">
+      <span>💬</span> Chat on WhatsApp Now
+    </a>
+    <div class="grid md:grid-cols-3 gap-6 mt-14 text-center">
+      <div>
+        <p class="text-2xl mb-2">📍</p>
+        <p class="font-bold">Location</p>
+        <p class="text-gray-500 text-sm">Anna Nagar, Chennai<br/>Serving all of Chennai</p>
+      </div>
+      <div>
+        <p class="text-2xl mb-2">🕐</p>
+        <p class="font-bold">Hours</p>
+        <p class="text-gray-500 text-sm">Mon–Sat: 7am – 9pm<br/>Sunday: 9am – 6pm</p>
+      </div>
+      <div>
+        <p class="text-2xl mb-2">📞</p>
+        <p class="font-bold">Phone</p>
+        <p class="text-gray-500 text-sm">+91 99999 99999<br/>WhatsApp preferred</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white py-8">
+  <div class="max-w-5xl mx-auto px-5 text-center">
+    <p class="font-extrabold syne text-xl mb-1">⚡ Sparks Electricals</p>
+    <p class="text-gray-400 text-sm mb-4">Licensed Electrical Services · Chennai</p>
+    <p class="text-xs text-gray-600">© 2025 Sparks Electricals · All rights reserved</p>
+    <p class="text-xs text-gray-600 mt-2">Website by <a href="index.html" class="text-orange-400 underline">Root Web Studio</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
