@@ -10,68 +10,88 @@
   <style>
     body { font-family: 'DM Sans', sans-serif; background: #f8f7ff; color: #1a1a2e; }
     h1, h2, h3, .syne { font-family: 'Syne', sans-serif; }
-    .btn-primary { background: #5b4bff; color: white; padding: 0.85rem 2rem; border-radius: 999px; font-family: 'Syne', sans-serif; font-weight: 600; transition: all 0.2s; display: inline-block; }
-    .btn-primary:hover { background: #4535ee; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(91,75,255,0.3); }
-    .btn-outline { border: 2px solid #5b4bff; color: #5b4bff; padding: 0.8rem 2rem; border-radius: 999px; font-family: 'Syne', sans-serif; font-weight: 600; transition: all 0.2s; display: inline-block; }
-    .btn-outline:hover { background: #5b4bff; color: white; transform: translateY(-2px); }
-    .card { background: white; border-radius: 1.25rem; box-shadow: 0 2px 20px rgba(91,75,255,0.07); transition: transform 0.2s, box-shadow 0.2s; }
-    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(91,75,255,0.13); }
-    .tag-purple { background: #5b4bff; color: white; border-radius: 999px; padding: 0.25rem 0.9rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-family: 'Syne', sans-serif; }
-    .tag { background: #ede8ff; color: #5b4bff; border-radius: 999px; padding: 0.25rem 0.9rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-family: 'Syne', sans-serif; }
+    .btn-primary { background: #0B493A; color: white; padding: 0.85rem 2rem; border-radius: 999px; font-family: 'Syne', sans-serif; font-weight: 600; transition: all 0.2s; display: inline-block; }
+    .btn-primary:hover { background: #0E5C49; transform: translateY(-2px); box-shadow: 0 8px 24px #688763; }
+    .btn-outline { border: 2px solid #0B493A; color:#0B493A; padding: 0.8rem 2rem; border-radius: 999px; font-family: 'Syne', sans-serif; font-weight: 600; transition: all 0.2s; display: inline-block; }
+    .btn-outline:hover { background: #0B493A; color: white; transform: translateY(-2px); }
+
+    .card {
+      background: #F3E8D3;
+      border-radius: 1.25rem;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.08); }
+
+    .tag-purple { background: #243E51; color: #F2E6B3; border-radius: 999px; padding: 0.25rem 0.9rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-family: 'Syne', sans-serif; }
+    .tag { background: #243E51; color: #F2E6B3; border-radius: 999px; padding: 0.25rem 0.9rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; font-family: 'Syne', sans-serif; }
     .feature-icon { width: 56px; height: 56px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem; }
   </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-purple-50">
+<nav class="sticky top-0 z-50 bg-[#4D694E]">
   <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
-    <a href="index.html" class="syne font-extrabold text-xl text-[#5b4bff]">Root Web Studio</a>
-    <a href="index.html" class="text-gray-500 text-sm hover:text-[#5b4bff] transition">← Back to Home</a>
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="logo.png" alt="Root Web Studio" class="h-8 w-auto">
+      <span class="syne text-xl font-extrabold text-[#F4B400]">
+        Root Web Studio
+      </span>
+    </a>
+    <div class="flex gap-4">
+      <a href="index.html" class="text-[#E3A419] text-sm hover:text-[#C78F14] transition">← Back to Home</a>
+    </div>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="py-20 bg-gradient-to-br from-[#1a1a2e] via-[#2a1f5f] to-[#1a1a2e] text-white relative overflow-hidden">
-  <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 30% 50%, #5b4bff 0%, transparent 60%), radial-gradient(circle at 70% 50%, #a896ff 0%, transparent 60%);"></div>
+<section class="py-20 bg-gradient-to-br from-[#0B493A] via-[#145C49] to-[#0B493A] text-white relative overflow-hidden">
+  
+  <div class="absolute inset-0 opacity-10"
+       style="background: radial-gradient(circle at 30% 50%, #E3A419 0%, transparent 60%),
+                      radial-gradient(circle at 70% 50%, #688763 0%, transparent 60%);">
+  </div>
   <div class="max-w-4xl mx-auto px-5 text-center relative z-10">
     <span class="tag-purple mb-4 inline-block">Standard Plan · Most Popular</span>
-    <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Your full business<br/><span class="text-[#a896ff]">presence online.</span></h1>
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Your full business<br/><span class="text-[#F2E6B3]">presence online.</span></h1>
     <p class="text-xl text-gray-300 max-w-xl mx-auto mb-8">A complete, multi-section website with premium design, contact integration, and everything a growing business needs.</p>
     <div class="flex flex-wrap gap-4 justify-center">
       <a href="https://forms.gle/GSHn36Yp8Li5qnQL7" target="_blank" class="btn-primary text-lg px-8">Get Started — ₹5,000 →</a>
-      <a href="demo-standard.html" class="btn-outline border-white/30 text-white hover:bg-white hover:text-[#5b4bff]">View Demo Site</a>
+      <a href="demo-standard.html"
+        class="btn-outline border-white/30 text-white hover:bg-white/10 hover:border-white transition">
+          View Demo Site
+      </a>
     </div>
-    <p class="text-sm text-gray-500 mt-4">One-time payment · 1 Revision included · Full code ownership</p>
+    <p class="text-sm text-gray-300 mt-4">One-time payment · Full code ownership</p>
   </div>
 </section>
 
 <!-- VS BASIC -->
-<section class="py-12 bg-white">
+<section class="py-12 bg-[#F0DFAF]">
   <div class="max-w-4xl mx-auto px-5">
     <div class="grid md:grid-cols-2 gap-6">
-      <div class="rounded-2xl border-2 border-gray-200 p-6">
-        <p class="font-bold syne mb-4 text-gray-400">Basic Plan — ₹2,000</p>
-        <ul class="space-y-2 text-sm text-gray-500">
-          <li class="flex gap-2"><span class="text-green-500">✓</span> 1-page website</li>
-          <li class="flex gap-2"><span class="text-green-500">✓</span> Mobile responsive</li>
-          <li class="flex gap-2"><span class="text-green-500">✓</span> WhatsApp button</li>
-          <li class="flex gap-2 line-through text-gray-300"><span>✗</span> Multi-section layout</li>
-          <li class="flex gap-2 line-through text-gray-300"><span>✗</span> Testimonials section</li>
-          <li class="flex gap-2 line-through text-gray-300"><span>✗</span> Pricing section</li>
-          <li class="flex gap-2 line-through text-gray-300"><span>✗</span> Revision round</li>
+      <div class="card p-7">
+        <p class="font-bold syne mb-4 text-gray-800">Basic Plan — ₹2,000</p>
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="text-green-700 font-bold">✓</span> 1-page website</li>
+          <li class="flex gap-2"><span class="text-green-700 font-bold">✓</span> Mobile responsive</li>
+          <li class="flex gap-2"><span class="text-green-700 font-bold">✓</span> WhatsApp button</li>
+          <li class="flex items-center gap-3 text-sm text-gray-400"><span>✗</span> Multi-section layout</li>
+          <li class="flex items-center gap-3 text-sm text-gray-400"><span>✗</span> Testimonials section</li>
+          <li class="flex items-center gap-3 text-sm text-gray-400"><span>✗</span> Pricing section</li>
         </ul>
       </div>
-      <div class="rounded-2xl border-2 border-[#5b4bff] p-6 bg-[#f8f7ff]">
-        <p class="font-bold syne mb-4 text-[#5b4bff]">Standard Plan — ₹5,000 ⭐</p>
+      <div class="card p-7">
+        <p class="font-bold syne mb-4 text-[#E3A419]">Standard Plan — ₹5,000</p>
         <ul class="space-y-2 text-sm">
-          <li class="flex gap-2 text-gray-800"><span class="text-[#5b4bff] font-bold">✓</span> Multi-section website</li>
-          <li class="flex gap-2 text-gray-800"><span class="text-[#5b4bff] font-bold">✓</span> Mobile responsive</li>
-          <li class="flex gap-2 text-gray-800"><span class="text-[#5b4bff] font-bold">✓</span> Contact form integration</li>
-          <li class="flex gap-2 text-gray-800"><span class="text-[#5b4bff] font-bold">✓</span> Multi-section layout</li>
-          <li class="flex gap-2 text-gray-800"><span class="text-[#5b4bff] font-bold">✓</span> Testimonials section</li>
-          <li class="flex gap-2 text-gray-800"><span class="text-[#5b4bff] font-bold">✓</span> Pricing section</li>
-          <li class="flex gap-2 text-gray-800"><span class="text-[#5b4bff] font-bold">✓</span> 1 free revision round</li>
+          <li class="flex gap-2 text-gray-800"><span class="text-green-700 font-bold">✓</span> Multi-section website</li>
+          <li class="flex gap-2 text-gray-800"><span class="text-green-700 font-bold">✓</span> Mobile responsive</li>
+          <li class="flex gap-2 text-gray-800"><span class="text-green-700 font-bold">✓</span> Contact form integration</li>
+          <li class="flex gap-2 text-gray-800"><span class="text-green-700 font-bold">✓</span> Multi-section layout</li>
+          <li class="flex gap-2 text-gray-800"><span class="text-green-700 font-bold">✓</span> Testimonials section</li>
+          <li class="flex gap-2 text-gray-800"><span class="text-green-700 font-bold">✓</span> Pricing section</li>
+          <li class="flex gap-2 text-gray-800"><span class="text-green-700 font-bold">✓</span> 1 free revision round</li>
         </ul>
       </div>
     </div>
@@ -79,90 +99,86 @@
 </section>
 
 <!-- FEATURES -->
-<section class="py-20 max-w-6xl mx-auto px-5">
-  <div class="text-center mb-12">
-    <span class="tag mb-3 inline-block">Features</span>
-    <h2 class="text-4xl font-extrabold">Everything in Standard</h2>
-  </div>
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="card p-7">
-      <div class="feature-icon bg-[#ede8ff]">🗂️</div>
-      <h3 class="text-lg font-bold syne mb-2">Multi-Section Layout</h3>
-      <p class="text-gray-500 text-sm">Hero, About, Services, Testimonials, Pricing, and Contact — all beautifully connected in one scrollable site.</p>
+<section class="py-20 bg-[#D9C29C] border-t border-black/5">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center mb-12">
+      <span class="tag mb-3 inline-block">Features</span>
+      <h2 class="text-4xl font-extrabold">Everything in Standard</h2>
     </div>
-    <div class="card p-7">
-      <div class="feature-icon bg-[#d4f5e9]">✨</div>
-      <h3 class="text-lg font-bold syne mb-2">Premium UI Design</h3>
-      <p class="text-gray-500 text-sm">Elevated typography, animations, hover effects, and spacing. Your site will feel premium, not template-ish.</p>
-    </div>
-    <div class="card p-7">
-      <div class="feature-icon bg-[#ffe8e0]">📬</div>
-      <h3 class="text-lg font-bold syne mb-2">Contact Integration</h3>
-      <p class="text-gray-500 text-sm">A contact form or Google Form embedded directly in the site so leads come straight to your inbox.</p>
-    </div>
-    <div class="card p-7">
-      <div class="feature-icon bg-[#e8f4ff]">⭐</div>
-      <h3 class="text-lg font-bold syne mb-2">Testimonials Section</h3>
-      <p class="text-gray-500 text-sm">Show off real reviews and build instant trust with new visitors. Social proof that converts.</p>
-    </div>
-    <div class="card p-7">
-      <div class="feature-icon bg-[#fff8e0]">💰</div>
-      <h3 class="text-lg font-bold syne mb-2">Pricing Section</h3>
-      <p class="text-gray-500 text-sm">Display your service packages or offers clearly. Help visitors understand your value before they even contact you.</p>
-    </div>
-    <div class="card p-7">
-      <div class="feature-icon bg-[#f0ffe8]">🔄</div>
-      <h3 class="text-lg font-bold syne mb-2">1 Revision Round</h3>
-      <p class="text-gray-500 text-sm">Not happy with something after delivery? We fix it. One complete revision round is included at no extra cost.</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card p-7">
+        <h3 class="text-lg font-bold syne mb-2">Multi-Section Layout</h3>
+        <p class="text-gray-500 text-sm">Hero, About, Services, Testimonials, Pricing, and Contact — all beautifully connected in one scrollable site.</p>
+      </div>
+      <div class="card p-7">
+        <h3 class="text-lg font-bold syne mb-2">Premium UI Design</h3>
+        <p class="text-gray-500 text-sm">Elevated typography, animations, hover effects, and spacing. Your site will feel premium, not template-ish.</p>
+      </div>
+      <div class="card p-7">
+        <h3 class="text-lg font-bold syne mb-2">Contact Integration</h3>
+        <p class="text-gray-500 text-sm">A contact form or Google Form embedded directly in the site so leads come straight to your inbox.</p>
+      </div>
+      <div class="card p-7">
+        <h3 class="text-lg font-bold syne mb-2">Testimonials Section</h3>
+        <p class="text-gray-500 text-sm">Show off real reviews and build instant trust with new visitors. Social proof that converts.</p>
+      </div>
+      <div class="card p-7">
+        <h3 class="text-lg font-bold syne mb-2">Pricing Section</h3>
+        <p class="text-gray-500 text-sm">Display your service packages or offers clearly. Help visitors understand your value before they even contact you.</p>
+      </div>
+      <div class="card p-7">
+        <h3 class="text-lg font-bold syne mb-2">1 Revision Round</h3>
+        <p class="text-gray-500 text-sm">Not happy with something after delivery? We fix it. One complete revision round is included at no extra cost.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- SECTIONS PREVIEW -->
-<section class="py-16 bg-white">
+<section class="py-16 bg-[#F0DFAF]">
   <div class="max-w-4xl mx-auto px-5">
     <div class="text-center mb-12">
       <span class="tag mb-3 inline-block">Page Structure</span>
       <h2 class="text-4xl font-extrabold">6 sections in your Standard site</h2>
     </div>
     <div class="space-y-3">
-      <div class="flex items-center gap-5 p-5 rounded-2xl border border-purple-100 bg-[#f8f7ff]">
-        <div class="w-10 h-10 rounded-xl bg-[#5b4bff] text-white flex items-center justify-center font-bold syne flex-shrink-0">1</div>
+      <div class="card p-7">
+        <div class="w-10 h-10 rounded-xl bg-[#243E51] text-white flex items-center justify-center font-bold syne flex-shrink-0">1</div>
         <div>
           <p class="font-bold">Hero Section</p>
           <p class="text-gray-500 text-sm">Strong headline, subtitle, and CTA button with gradient background</p>
         </div>
       </div>
-      <div class="flex items-center gap-5 p-5 rounded-2xl border border-purple-100 bg-[#f8f7ff]">
-        <div class="w-10 h-10 rounded-xl bg-[#5b4bff] text-white flex items-center justify-center font-bold syne flex-shrink-0">2</div>
+      <div class="card p-7">
+        <div class="w-10 h-10 rounded-xl bg-[#243E51] text-white flex items-center justify-center font-bold syne flex-shrink-0">2</div>
         <div>
           <p class="font-bold">About Section</p>
           <p class="text-gray-500 text-sm">Your story, mission, and what makes you different</p>
         </div>
       </div>
-      <div class="flex items-center gap-5 p-5 rounded-2xl border border-purple-100 bg-[#f8f7ff]">
-        <div class="w-10 h-10 rounded-xl bg-[#5b4bff] text-white flex items-center justify-center font-bold syne flex-shrink-0">3</div>
+      <div class="card p-7">
+        <div class="w-10 h-10 rounded-xl bg-[#243E51] text-white flex items-center justify-center font-bold syne flex-shrink-0">3</div>
         <div>
           <p class="font-bold">Services Section</p>
           <p class="text-gray-500 text-sm">Cards or grid showing all your offerings</p>
         </div>
       </div>
-      <div class="flex items-center gap-5 p-5 rounded-2xl border border-purple-100 bg-[#f8f7ff]">
-        <div class="w-10 h-10 rounded-xl bg-[#5b4bff] text-white flex items-center justify-center font-bold syne flex-shrink-0">4</div>
+      <div class="card p-7">
+        <div class="w-10 h-10 rounded-xl bg-[#243E51] text-white flex items-center justify-center font-bold syne flex-shrink-0">4</div>
         <div>
           <p class="font-bold">Testimonials Section</p>
           <p class="text-gray-500 text-sm">Customer reviews in beautiful quote cards</p>
         </div>
       </div>
-      <div class="flex items-center gap-5 p-5 rounded-2xl border border-purple-100 bg-[#f8f7ff]">
-        <div class="w-10 h-10 rounded-xl bg-[#5b4bff] text-white flex items-center justify-center font-bold syne flex-shrink-0">5</div>
+      <div class="card p-7">
+        <div class="w-10 h-10 rounded-xl bg-[#243E51] text-white flex items-center justify-center font-bold syne flex-shrink-0">5</div>
         <div>
           <p class="font-bold">Pricing Section</p>
           <p class="text-gray-500 text-sm">Your packages and pricing, presented clearly</p>
         </div>
       </div>
-      <div class="flex items-center gap-5 p-5 rounded-2xl border border-purple-100 bg-[#f8f7ff]">
-        <div class="w-10 h-10 rounded-xl bg-[#5b4bff] text-white flex items-center justify-center font-bold syne flex-shrink-0">6</div>
+      <div class="card p-7">
+        <div class="w-10 h-10 rounded-xl bg-[#243E51] text-white flex items-center justify-center font-bold syne flex-shrink-0">6</div>
         <div>
           <p class="font-bold">Contact Section</p>
           <p class="text-gray-500 text-sm">Contact form or Google Form + WhatsApp + address</p>
@@ -173,32 +189,50 @@
 </section>
 
 <!-- DEMO CTA -->
-<section class="py-20 max-w-6xl mx-auto px-5">
-  <div class="card p-10 bg-gradient-to-br from-[#5b4bff] to-[#8b7bff] text-white text-center">
-    <span class="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full syne mb-4 uppercase tracking-wide">Live Demo</span>
-    <h2 class="text-4xl font-extrabold mb-4">See the Standard plan live</h2>
-    <p class="text-purple-100 max-w-md mx-auto mb-8">Our demo shows exactly what your Standard site will look like — premium UI, all 6 sections, mobile-perfect.</p>
-    <a href="demo-standard.html" class="inline-block bg-white text-[#5b4bff] font-bold syne px-8 py-4 rounded-full hover:bg-gray-100 transition text-lg">View Demo Website →</a>
-  </div>
-</section>
-
-<!-- FOOTER CTA -->
-<section class="py-12 bg-[#1a1a2e] text-white">
-  <div class="max-w-4xl mx-auto px-5 text-center">
-    <h2 class="text-4xl font-extrabold syne mb-3">₹5,000 · One-time · Everything included</h2>
-    <p class="text-gray-400 mb-8">The complete website your business deserves. Pay once, own it forever.</p>
-    <div class="flex flex-wrap gap-4 justify-center">
-      <a href="https://forms.gle/GSHn36Yp8Li5qnQL7" target="_blank" class="btn-primary text-lg">Get Started Now →</a>
-      <a href="basic.html" class="btn-outline border-white/30 text-white hover:bg-white hover:text-[#5b4bff]">View Basic Plan</a>
+<section class="py-20 bg-[#D9C29C] border-t border-black/5">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="card p-10 bg-[#F5E6D3] text-center">
+      <span class="inline-block bg-[#243E51] text-[#F2E6B3] text-xs font-bold px-3 py-1 rounded-full syne mb-4 uppercase tracking-wide">Live Demo</span>
+      <h2 class="text-4xl font-extrabold mb-4">See the Standard plan live</h2>
+      <p class="text-[#243E51] max-w-md mx-auto mb-8">Our demo shows exactly what your Standard site will look like — premium UI, all 6 sections, mobile-perfect.</p>
+      <a href="demo-standard.html" target="_blank" class="btn-primary text-lg px-8">View Demo Website →</a>
     </div>
   </div>
 </section>
 
-<footer class="bg-[#1a1a2e] border-t border-white/10 text-white py-8">
+<!-- FOOTER CTA -->
+<section class="py-12 bg-[#738F6F] text-white">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <h2 class="text-4xl font-extrabold syne mb-3">₹5,000 · One-time · Everything included</h2>
+    <p class="text-gray-200 mb-8">The complete website your business deserves. Pay once, own it forever.</p>
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="https://forms.gle/GSHn36Yp8Li5qnQL7" target="_blank" class="btn-primary text-lg">Get Started Now →</a>
+      <a href="basic.html"
+        class="btn-outline border-white/30 text-white hover:bg-white/10 hover:border-white transition">
+        View Basic Plan
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#0A1F1A] border-t border-white/10 text-white py-8">
   <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-gray-500">
-    <a href="index.html" class="syne font-extrabold text-[#a896ff] text-lg">Root Web Studio</a>
-    <p>© 2025 Root Web Studio · rootweb.website.designers@gmail.com</p>
-    <a href="index.html" class="hover:text-white transition">← Back to Home</a>
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="logo.png" alt="Root Web Studio" class="h-11 w-auto">
+      <span class="syne text-xl font-extrabold text-[#F4B400]">
+        Root Web Studio
+      </span>
+    </a>
+    <div class="text-center md:text-left">
+      <p>© 2025 Root Web Studio · <a href="mailto:rootweb.website.designers@gmail.com"
+          class="text-[#0B493A] font-semibold transition duration-200 hover:underline hover:text-[#08382C]">
+          rootweb.website.designers@gmail.com
+        </a>
+      </p>
+    </div>
+    <div class="flex gap-4">
+      <a href="index.html" class="text-[#E3A419] text-sm hover:text-[#C78F14] transition">← Back to Home</a>
+    </div>
   </div>
 </footer>
 
